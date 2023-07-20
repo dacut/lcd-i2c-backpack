@@ -1,0 +1,20 @@
+[package]
+name = "lcd-i2c-backpack"
+version = "0.1.0-alpha.0"
+authors = ["David Cuthbert <dacut@kanga.org>"]
+categories = ["embedded", "hardware-support"]
+description = "LCD character display hardware implementation for the I2C 'backpack' kit and embedded-hal."
+edition = "2021"
+homepage = "https://github.com/dacut/pcf8574-rs"
+keywords = ["i2c", "driver"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/dacut/pcf8574-rs"
+resolver = "2"
+
+[features]
+default = []
+
+[dependencies]
+embedded-hal = ">=1.0.0-alpha.0"
+lcd = { version = "0.4.1", path = "../lcd" }
